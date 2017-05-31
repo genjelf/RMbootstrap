@@ -172,6 +172,82 @@ color:#000;
  background-color: #fbfca9;
 }
 
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+#btn-menu{
+			display: none;
+		}
+		#bars{
+			cursor: pointer;
+			position: absolute;
+			right: 25px;
+			top: 4px;
+		}
+		.menu-mo{          /*K*/
+			display: block;
+			position: absolute;
+			top: 50px;
+			left: 0;
+			width: 100%;
+			transform: translateX(-100%);
+           transition: all 0.3s;
+			
+			
+		}
+		.menu-mo ul{
+			padding: 0;
+		}
+		.menu-mo li{    /*k*/
+			background: #adcd90;
+			 padding: 10px 0 10px 0;
+			 text-transform: uppercase;
+			 list-style-type: none;
+			 text-decoration: none;
+		}
+		.menu-mo li:hover{    /*K*/
+			background: rgba(0,0,0,0.5);
+		}
+		.menu-mo a{           /*K*/
+		    color: #fff;
+		    text-decoration: none;
+		    margin-top: 5px;
+		    margin-left: 10px;
+
+		}
+       #btn-menu:checked ~ .menu-mo {        /*K*/
+          transform: translateX(0%);
+          
+       }
+
+       #bar-search-Check{
+			display: none;
+		}
+		#bar-search{
+			width: 100%;
+			position: absolute;
+			top:50px;
+			left: 0;
+			height: 40px;
+			background-color: rgba(231,232,118,0.8);		
+			color:#000;
+			text-align: center;
+			font-size: 1rem;
+			transform: translateX(-100%);
+            transition: all 0.3s;
+
+		}
+		#bar-search-Check:checked ~ #bar-search{
+			transform: translateX(0%);
+		}
+
+		#search-bars{
+			cursor: pointer;
+			position: absolute;
+			right: 135px;
+			top: 2px;
+		}
+/*=========================================================================*/
+
 .banner_mov{
 	background: url("../images/bannermovil.jpg") center center;
 	background-size: cover;
@@ -453,8 +529,7 @@ body{
 		width: 1024px;
 		margin:auto;
 	}
-
-	.content2{
+       .content2{
 		width: 910px;
 		margin:auto;
 		background-color: #fff;
