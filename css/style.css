@@ -83,6 +83,10 @@ justify-content: space-between;
 #items-menu-mov li a:hover{
 	background: rgba(255,255,255,0.2);
 }
+#active-inicio a{
+	background: rgba(255,255,255,0.2);
+}
+
 
 /*main*/
 #welcome,#N-menu,#event-prox,#cocteles{

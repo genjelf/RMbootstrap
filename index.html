@@ -12,18 +12,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700,700i" rel="stylesheet">
 	<script src="https://use.fontawesome.com/a98bc02b4c.js"></script>
-    <script>
-				function toggleMobileMenu()
-				{
-					var $mobilemenu =$('#items-menu-mov');
-					$mobilemenu.slideToggle('fast');
-				}
-				$(document).ready(function(){
-					$('#i-menu-mov').on('click',toggleMobileMenu);
-				});
-    </script>
-
-	<script src="js/jquery.js"></script>	
+    <script src="js/jquery.js"></script>	
 	<script src="js/bootstrap.min.js"></script>
 </head>
 <body class="content">
@@ -80,11 +69,11 @@
 
 				</div> 
        </div>
-      <nav >
+      <!-- <nav > -->
       	<div class="row">
       		<div class="hidden-xs col-sm-12" id="navegacion">
 	     	   <ul id="items-menu-mov" class="nav nav-pills">
-					  <li role="presentation"><a href="#">INICIO</a></li>
+					  <li role="presentation" id="active-inicio" ><a href="#">INICIO</a></li>
 					  <li role="presentation"><a href="#">MENÚ</a></li>
 					  <li role="presentation"><a href="#">GALERÍA</a></li>
 					  <li role="presentation"><a href="#">NOSOTROS</a></li>
@@ -95,9 +84,6 @@
 	         </div> 
       	</div>
       
-     
-      
-
     <main class="content2">
 		
  
@@ -108,7 +94,7 @@
         		<h1 class="FStitles" >BIENVENIDOS</h1>
         		<div id="lineawel"></div>
         		<p class="FSparrafos" id="pWel">Bienvenidos a Bar & Restaurante Riviera Maya esperamos que disfruten de la comida de este relajado y amigable restaurante. Ha estado abierto durante más de un año.</p>
-        			<div id="lineBottomPa "></div>
+        			<div id="lineBottomPa"></div>
         	</div>
         	<div class=" col-sm-6 hidden-xs" id="videoContent">
         		<video id="video-cocina" controls poster="images/videopreview.jpg">
@@ -119,7 +105,7 @@
         </div>
 
 	    </section>
-        <div class="row align-text"">
+        <div class="row align-text">
         <section  class="align-text">
        <!--  <div class="row"> -->
         	<div class="col-xs-12 col-sm-4 colortext" id="N-menu">
@@ -157,7 +143,7 @@
         			<img class="setting-img" src="images/cocteles.jpg" alt="menu de rivieraMaya">
         		</figure>
         		<p class="FSparrafos" > <a href="#" class="colortext">Pulse aquí para <br> más información</a></p>
-        		<div id="barra-m-e-c sm" class="hidden-sm hidden-md"></div>
+        		<div id="barra-m-e-c" class="hidden-sm hidden-md hidden-lg"></div>
         	</div>
         <!-- </div> -->
         
@@ -171,7 +157,7 @@
 	        	<h2 id="promoCALL" class="colortext FSsubtitles">Pregunte por nuestras promociones en comidas y bebidas.</h2>
 	        	<p  class="colortext num-cel">(505) 8840-7198</p>
 	        	<form action="#">
-	        		<a  href="#" class="colortext"><input id="btn-escr" type="button" name="boton" value="Escríbenos"  class="colordiv colortexto"></a>
+	        		<!-- <a  href="#" class="colortext"> --><input id="btn-escr" type="button" name="boton" value="Escríbenos"  class="colordiv colortexto"><!-- </a> -->
 	        	</form>
 	        	</div>
         	</div>
